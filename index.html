@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi primer CRUD API Rest(falsa) Fetch + Async-Await</title>
+  </head>
+  <body>
+    <h1>Mi primer CRUD API Rest(falsa) Fetch + Async-Await</h1>
+    <section>
+      <article>
+        <h2 class="crud-title">Agregar Videojuego:</h2>
+        <form class="crud-form">
+          <input type="text" name="nombre" placeholder="Nombre" required />
+          <br />
+          <input type="text" name="consola" placeholder="Consola" required />
+          <br />
+          <input
+            type="text"
+            name="concluido"
+            placeholder="Concluido"
+            required
+          />
+          <br />
+          <input type="submit" value="Agregar" />
+          <!-- Mandar una acción cuándo envie el formulario. Al momento de procesar este input, le voy a mandar la acción de insertar, o actualizar o eliminar-->
+          <input type="hidden" name="id" />
+        </form>
+      </article>
+      <article>
+        <!-- <h2>Ver Videojuegos</h2> -->
+        <h2>Estos son los juegos de mi colección:</h2>
+        <table class="crud-table">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Consola</th>
+              <th>Concluido</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <!-- Insertar en el tbody el template -->
+          <tbody></tbody>
+        </table>
+      </article>
+    </section>
+
+    <!-- Machote template -->
+    <template id="crud-template">
+      <tr>
+        <td class="name"></td>
+        <td class="console"></td>
+        <td class="concluded"></td>
+        <td>
+          <button class="edit">Editar</button>
+          <button class="delete">Eliminar</button>
+        </td>
+      </tr>
+    </template>
+
+    <script src="./crud_fetch.js"></script>
+  </body>
+</html>

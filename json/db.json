@@ -1,0 +1,22 @@
+{
+  "videojuegos": [
+    {
+      "id": "1",
+      "nombre": "Super Metroid",
+      "consola": "Super Nintendo",
+      "concluido": "true"
+    },
+    {
+      "id": "d9f2",
+      "nombre": "Metroid Dread",
+      "consola": "Nintendo Switch",
+      "concluido": "true"
+    },
+    {
+      "id": "4742",
+      "nombre": "Batman Returns",
+      "consola": "Super Nintendo",
+      "concluido": "false"
+    }
+  ]
+}
